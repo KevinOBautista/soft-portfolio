@@ -1,0 +1,17 @@
+@import "../../app.scss";
+
+.hero {
+	.imageContainer {
+		@include mobile {
+			margin-top: 25%;
+		}
+	}
+	.slidingTextContainer {
+		position: absolute;
+		font-size: 50vh;
+		width: 50%;
+		bottom: -120px;
+		white-space: nowrap;
+		z-index: -2;
+	}
+}
