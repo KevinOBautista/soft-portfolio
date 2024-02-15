@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-	scroll-snap-type: y mandatory;
+	// scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
 
@@ -20,14 +20,18 @@ body {
 }
 
 section {
-	height: 100vh;
+	// height: 100vh;
 	overflow: hidden;
-	scroll-snap-align: center;
+	// scroll-snap-align: center;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.visible-section {
+	height: 100vh;
 }
 
 @mixin mobile {

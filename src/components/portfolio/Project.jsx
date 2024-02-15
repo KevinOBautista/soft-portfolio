@@ -5,7 +5,7 @@ const variants = {
 	clicked: {
 		transition: {
 			type: "spring",
-			stiffness: 20,
+			stiffness: 50,
 		},
 		fill: "rgba(255, 0, 0, 1)",
 		scale: 1.05,
@@ -25,7 +25,7 @@ const Project = ({ id, title, description, img, link }) => {
 
 	return (
 		<div className="flex group max-w-sm relative" id={`project-${id}`}>
-			<div className="flex flex-col border-2 border-zinc-500 rounded-lg p-3 group sm:w-96 bg-zinc-900 gap-8">
+			<div className="flex flex-col  border-zinc-500 rounded-lg p-3 group sm:w-96 bg-zinc-900 gap-8">
 				<div className="imageContainer flex w-40 m-auto">
 					<img src={img} alt="" />
 				</div>
