@@ -9,7 +9,7 @@ const ContactForm = ({ sendEmail, formRef, error, success }) => {
 			ref={formRef}
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ delay: 4, duration: 1 }}
+			transition={{ delay: 3, duration: 1 }}
 			onSubmit={sendEmail}
 		>
 			<div className="top-part flex sm:flex-row flex-col justify-around items-center gap-3">
