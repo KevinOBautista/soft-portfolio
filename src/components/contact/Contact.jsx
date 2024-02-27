@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import { motion, useInView } from "framer-motion";
 import "./contact.scss";
-import ContactForm from "./contactForm";
+import ContactForm from "./ContactForm";
 import ContactButtonList from "../contact-buttons/ContactButtonList";
 
 const variants = {
