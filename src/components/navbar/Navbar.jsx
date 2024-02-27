@@ -6,7 +6,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar flex w-full justify-between py-4 px-2 sm:px-8 lg:px-16 bg-zinc-700 items-center">
 			<motion.h2
-				className="text-indigo-500 text-xl font-medium text-2xl tracking-widest"
+				className="text-indigo-500 font-medium text-2xl tracking-widest"
 				initial={{ opacity: 0, scale: 0.5 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
