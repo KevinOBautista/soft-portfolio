@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import "./portfolio.scss";
 
 const variants = {
 	clicked: {
@@ -24,14 +25,16 @@ const Project = ({ id, title, description, img, link }) => {
 	const [clicked, setClicked] = useState(false);
 
 	return (
-		<div className="flex group max-w-sm relative" id={`project-${id}`}>
-			<div className="flex flex-col  border-zinc-500 rounded-lg p-3 group sm:w-96 bg-zinc-900 gap-8">
-				<div className="imageContainer flex w-40 m-auto">
-					<img src={img} alt="" />
-				</div>
-				<div className="information flex flex-col text-center gap-2">
-					<h4 className="text-xl font-semibold">{title}</h4>
-					<p>{description}</p>
+		<div className="flex group relative max-w-[90vw]" id={`project-${id}`}>
+			<div className="flex flex-col border-2 border-zinc-600 group-hover:border-indigo-500 rounded-lg p-5 group sm:w-96 bg-zinc-900 gap-6 justify-between">
+				<div className="top-part">
+					<div className="imageContainer flex w-1/4">
+						<img src={img} alt="" />
+					</div>
+					<div className="information flex flex-col gap-2 mt-4">
+						<h4 className="text-xl font-semibold">{title}</h4>
+						<p>{description}</p>
+					</div>
 				</div>
 				<div className="buttons flex justify-between text-center">
 					<motion.a

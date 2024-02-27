@@ -59,8 +59,8 @@ const Hero = () => {
 					<motion.img
 						src="./programming.svg"
 						alt=""
-						whileHover={{
-							scale: 0.9,
+						whileInView={{
+							y: 20,
 							transition: {
 								repeat: Infinity,
 								repeatType: "mirror",

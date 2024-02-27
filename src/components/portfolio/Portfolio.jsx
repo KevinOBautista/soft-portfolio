@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const portfolioVarient = {
 	initial: {
-		x: -500,
+		x: "-95vw",
 		y: 100,
 		opacity: 0,
 	},
@@ -22,13 +22,13 @@ const portfolioVarient = {
 const Portfolio = () => {
 	return (
 		<motion.div
-			className="portfolio flex flex-col w-full items-center"
+			className="portfolio flex flex-col w-full items-center py-10"
 			variants={portfolioVarient}
 			initial="initial"
 			whileInView="animate"
 		>
 			<motion.h2
-				className="tracking-widest text-2xl p-4 font-semibold"
+				className="tracking-wider text-3xl md:text-4xl p-4 font-semibold py-10"
 				variants={portfolioVarient}
 			>
 				CREATIONS:
@@ -36,59 +36,31 @@ const Portfolio = () => {
 			<div className="projects flex flex-wrap gap-8 sm:gap-10 justify-center">
 				<Project
 					id={1}
-					title="Trees"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#Contact"
+					title="Restaurant Reservation"
+					description="This web application allows restaurant admistrators to make reservations for their restaurants, making the process of creating reservations and seating them convenient."
+					img="./resres.png"
+					link="https://github.com/KevinOBautista/restaurant-reservation"
 				/>
 				<Project
 					id={2}
-					title="Test2"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
+					title="Study Deck"
+					description="Study Deck is a dynamic and user-friendly platform dedicated to simplifying the creation, study, and management of flashcards. Whether you're a student aiming to elevate your learning or a professional seeking enhanced knowledge retention, Study Deck offers a seamless solution for personalized and efficient learning."
+					img="./studydeck1.png"
+					link="https://github.com/KevinOBautista/Study-Deck"
 				/>
 				<Project
 					id={3}
-					title="Test3"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
+					title="Will You Be My Valentine"
+					description={`A playful and interactive way to ask that special someone the big question this Valentine's Day. Hosted as a GitHub Page, this project offers a unique blend of creativity and technology to make your Valentine's Day proposal unforgettable with your upcoming plans.`}
+					img="./vday.png"
+					link="https://github.com/KevinOBautista/valentine-page"
 				/>
 				<Project
 					id={4}
-					title="Test4"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
-				/>
-				<Project
-					id={5}
-					title="Test5"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
-				/>
-				<Project
-					id={6}
-					title="Test6"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
-				/>
-				<Project
-					id={7}
-					title="Test7"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
-				/>
-				<Project
-					id={8}
-					title="Test8"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem est fugiat, eum maxime aut numquam expedita velit amet molestias quibusdam, distinctio totam assumenda doloribus quae fuga voluptate. Eveniet, nihil!"
-					img="https://raw.githubusercontent.com/KevinOBautista/restaurant-reservation/main/assets/dashboard.PNG"
-					link="#test"
+					title="MetroBus Administrator"
+					description="A web-based application designed to simplify the creation, management, and monitoring of bus route sheets. This application allows users to create detailed route sheets, including information about customers, dispatchers, dates, and support drivers assigned to each passenger after reaching a specific stop."
+					img="./metrobuslogo.png"
+					link="https://github.com/KevinOBautista/MetroBus"
 				/>
 			</div>
 		</motion.div>

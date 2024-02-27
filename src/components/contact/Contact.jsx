@@ -60,17 +60,17 @@ const Contact = () => {
 				<ContactButtonList size={"40"} />
 			</div>
 			<div className="flex flex-col md:flex-row justify-evenly gap-3 pt-20 items-center">
-				<motion.div className="image-container">
-					<img src="./message_sent.svg" alt="" />
+				<motion.div className="image-container w-full md:w-4/12 flex justify-center items-center h-full">
+					<img src="./message_sent.svg" alt="" className="w-10/12" />
 				</motion.div>
 				<div className="form-container">
 					<motion.div
-						className="phoneSvg m-auto absolute z-99"
+						className="phoneSvg m-auto absolute z-99 left-0 md:left-auto"
 						initial={{ opacity: 1 }}
 						whileInView={{ opacity: 0 }}
 						transition={{ delay: 3, duration: 1 }}
 					>
-						<svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+						<svg width="450px" height="450px" viewBox="0 0 33 33">
 							<motion.path
 								stroke="#fff"
 								strokeWidth={0.2}

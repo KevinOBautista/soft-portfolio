@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {
 	faBootstrap,
 	faCss3,
+	faFigma,
 	faGit,
 	faGithub,
 	faHtml5,
@@ -15,7 +16,7 @@ import Stack from "./Stack";
 
 const variants = {
 	initial: {
-		x: -500,
+		x: "-95vw",
 		opacity: 0,
 	},
 	animate: {
@@ -30,8 +31,8 @@ const variants = {
 
 const About = () => {
 	return (
-		<>
-			<h1 className="text-center text-3xl md:text-6xl font-bold tracking-wider pt-4">
+		<div className="relative">
+			<h1 className="text-center text-3xl md:text-6xl font-bold tracking-wider py-4 relative">
 				About Me
 			</h1>
 			<motion.div
@@ -40,7 +41,7 @@ const About = () => {
 				whileInView="animate"
 				initial="initial"
 			>
-				<div className="card flex flex-col rounded-lg items-center md:w-1/3 bg-zinc-900 p-20">
+				<div className="card flex flex-col rounded-xl items-center md:w-1/3 p-20">
 					<div className="imgContainer w-28 md:w-64">
 						<img
 							src="./kevcircled.jpg"
@@ -49,10 +50,11 @@ const About = () => {
 						/>
 					</div>
 					<p className="mt-5 ">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-						hic. Saepe ea alias dicta illo fugit quam labore quidem aspernatur.
-						Ratione vitae quasi voluptatibus distinctio aspernatur voluptatum,
-						itaque libero hic?
+						I'm Kevin Bautista, a passionate and versatile professional in the
+						realms of software development and graphic design. With a
+						deep-rooted love for creating meaningful and visually appealing
+						digital experiences, I bring a unique blend of technical expertise
+						and artistic flair to every project.
 					</p>
 				</div>
 				{/* <h1 className="text-center text-4xl font-bold tracking-wider pb-4">
@@ -128,6 +130,7 @@ const About = () => {
 								text="VSCode"
 								path="M11.72,18.685,4.837,23.869,2,22.922,9,16,2,9.077,4.837,8.13l6.883,5.184,11.433-11.3L30,4.922V27.077l-6.847,2.909ZM15.287,16l7.865,5.923V10.076Z"
 							/>
+							<Stack text={"Figma"} icon={faFigma} />
 							<Stack text="Git" icon={faGit} />
 							<Stack text="GitHub" icon={faGithub} />
 							<Stack
@@ -152,8 +155,9 @@ const About = () => {
 						</div>
 					</div>
 				</div>
+				<div className="background absolute bg-gradient-to-r from-indigo-500 to-indigo-600 w-full min-h-[500px] left-0 -z-10 -skew-y-3 box-border block"></div>
 			</motion.div>
-		</>
+		</div>
 	);
 };
 

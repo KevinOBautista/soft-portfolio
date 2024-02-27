@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
-import Portfolio from "./components/portfolio/portfolio";
+import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import Gallery from "./components/gallery/Gallery";
 import About from "./components/about/About";
@@ -23,10 +23,10 @@ function App() {
 			<section id="About" className="md:h-[100vh]">
 				<About />
 			</section>
-			<section id="Portfolio" className="visible-section">
+			<section id="Portfolio" className=" min-h-[100vh]">
 				<Portfolio />
 			</section>
-			<section id="gallery" className="visible-section">
+			<section id="gallery">
 				<Gallery />
 			</section>
 			{/* <section id="Tech-Stack">

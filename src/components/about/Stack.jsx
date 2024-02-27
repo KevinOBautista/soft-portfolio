@@ -1,8 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 const Stack = ({ icon, text, path, vB }) => {
 	return (
-		<div className="stack bg-zinc-900 rounded-lg p-4 flex flex-col justify-center items-center gap-2">
+		<motion.div
+			whileHover={{
+				y: -4,
+			}}
+			className="stack bg-zinc-900 rounded-lg p-4 flex flex-col justify-center items-center gap-2"
+		>
 			{icon && <FontAwesomeIcon icon={icon} color="white" size={"xl"} />}
 			{path && (
 				<svg
@@ -16,7 +22,7 @@ const Stack = ({ icon, text, path, vB }) => {
 				</svg>
 			)}
 			<p className="text-wrap">{text}</p>
-		</div>
+		</motion.div>
 	);
 };
 
