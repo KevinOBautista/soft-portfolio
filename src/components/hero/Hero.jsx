@@ -57,7 +57,7 @@ const Hero = () => {
 					className="imageContainer flex justify-center align-center w-full h-auto"
 				>
 					<motion.img
-						src="./programming.svg"
+						src="/programming.svg"
 						alt=""
 						whileInView={{
 							y: 20,

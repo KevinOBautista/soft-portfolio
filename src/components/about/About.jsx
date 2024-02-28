@@ -32,7 +32,7 @@ const variants = {
 const About = () => {
 	return (
 		<div className="relative">
-			<h1 className="text-center text-3xl md:text-6xl font-bold tracking-wider py-4 relative">
+			<h1 className="text-center text-4xl md:text-6xl font-bold tracking-wider md:py-4 relative">
 				About Me
 			</h1>
 			<motion.div
@@ -155,7 +155,7 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className="background absolute bg-gradient-to-r from-indigo-500 to-indigo-600 w-full min-h-[500px] left-0 -z-10 -skew-y-3 box-border block"></div>
+				<div className="background absolute bg-gradient-to-r from-indigo-500 to-indigo-600 w-full min-h-[90%] md:min-h-[500px] left-0 -z-10 -skew-y-3 box-border block"></div>
 			</motion.div>
 		</div>
 	);
